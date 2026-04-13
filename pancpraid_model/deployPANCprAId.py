@@ -140,7 +140,7 @@ if __name__ == "__main__":
         coords = np.concatenate(all_coords, axis=0)
 
         slide_name = patient
-        features, coords =read_h5(h5_path)
+        #features, coords =read_h5(h5_path)
         prediction_tumor,feats_tumor,coord_tumor = getTumoralTiles(pacpaint_model,features,coords,args.tumor_th, args.tumor_cells_th,device)
         ffx_sc,gem_sc = deployPANCprAId(hFFXmodel,hGEMmodel,feats_tumor,device)
         pancpraid_scores.append([slide_name,ffx_sc.cpu().item(),gem_sc.cpu().item()])

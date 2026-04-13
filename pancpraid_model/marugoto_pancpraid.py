@@ -101,6 +101,6 @@ def loadPANCprAId(gem_pth,ffx_pth,input_dim,device) :
 def deployPANCprAId(hFFXmodel,hGEMmodel,features,device) : 
     tens= torch.tensor(features).unsqueeze(0)
     with torch.no_grad():
-        ffx_sc=hFFXmodel(tens.to(device),torch.tensor([tens.shape[1]]).to(device))
-        gem_sc=hGEMmodel(tens.to(device),torch.tensor([tens.shape[1]]).to(device))
+        ffx_sc=hFFXmodel(tens.to(device).float(),torch.tensor([tens.shape[1]]).to(device).float())
+        gem_sc=hGEMmodel(tens.to(device).float(),torch.tensor([tens.shape[1]]).to(device).float())
     return ffx_sc,gem_sc

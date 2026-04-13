@@ -21,8 +21,8 @@ pip install -r requirements.txt
 Request access to the model weights from the Huggingface model page at: https://huggingface.co/mahmoodlab/UNI.
 
 ## Usage
-### Extract neoplasic features
-To use the model, you can use the following code:
+### Extract UNI features
+To extract UNI, you can use the following code, in the extractTiles folder:
 
 ```bash
 usage: python process_wsi.py [-h] --temp_dir TEMP_DIR [--wsi WSI] [--model_path MODEL] --device {cuda:0,cpu,mps}]
@@ -47,7 +47,7 @@ python src/UNI_extractor/process_wsi.py --temp_dir /home/results/ --wsi /home/da
 
 
 ### Deploy pancpraid algorithm 
-To use the PANCprAId pipeline, you can run the following command:
+To use the PANCprAId pipeline, you can run the following command, int the pancpraid_model folders:
 
 ```bash
 usage: python deployPANCprAId.py [-h] --model_pacpaint_path MODEL_PACPAINT_PATH 

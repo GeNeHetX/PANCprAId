@@ -83,6 +83,7 @@ python deployPANCprAId.py --model_pacpaint_path ../models/PACpAInt_uni.pth --mod
 
 
 ## References
-[1] Chen, Richard J and Ding, Tong and Lu, Ming Y and Williamson, Drew FK and Jaume, Guillaume and Chen, Bowen and Zhang, Andrew and Shao, Daniel and Song, Andrew H and Shaban, Muhammad and others « Towards a General-Purpose Foundation Model for Computational Pathology ». Nature Medicine (2024) https://doi.org/10.1038/s41591-024-02857-3.
-[2] coming soon 
+[1] Chen, Richard J et al. Towards a General-Purpose Foundation Model for Computational Pathology. Nature Medicine (2024) https://doi.org/10.1038/s41591-024-02857-3.
+[2] Audrey Beaufils et al. Developing a Histology-Based Artificial Intelligence Biomarker to Predict Adjuvant Chemotherapy Benefit in Pancreatic Cancer. J Clin Oncol 0, JCO-26-00327
+DOI:10.1200/JCO-26-00327
 
